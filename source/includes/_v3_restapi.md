@@ -178,7 +178,7 @@ GET v3/account?subAcc={subAcc},{subAcc}
                     "asset": "FLEX",
                     "total": "1585.890",
                     "available": "325.890",
-                    "reserved": "1260",
+                    "reserved": "1260.21",
                     "lastUpdatedAt": "1593627415123"
                 }
             ],
@@ -889,7 +889,7 @@ address | STRING | |
 memo | STRING | Memo (tag) if applicable |
 quantity | STRING | |
 fee | STRING | |
-status | STRING | COMPLETED, PROCESSING, PENDING, IN_SWEEPING, ON HOLD, CANCELED, or FAILED| 
+status | STRING | COMPLETED, PROCESSING, PENDING, ON HOLD, CANCELED, or FAILED| 
 txId | STRING | |
 requestedAt | STRING | Millisecond timestamp |
 completedAt | STRING | Millisecond timestamp |
@@ -1456,7 +1456,7 @@ GET /v3/trades?marketCode={marketCode}&limit={limit}&startTime={startTime}&endTi
                     "leg2Price": "0.0065",			
                     "orderMatchType": "TAKER",
                     "feeAsset": "FLEX",
-                    "fee":"0.0096",
+                    "fee":"0.0196",
                     "source": "10",
                     "matchedAt": "1595514663626"
 
