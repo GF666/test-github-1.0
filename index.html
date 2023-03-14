@@ -289,6 +289,7 @@
     <link href="stylesheets/screen-9c19b03a.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-b12a2749.js"></script>
+    <link href="images/favicon-92b8c2e4.ico" rel="icon" type="image/ico" />
 
     <script>
       $(function() { setupCodeCopy(); });
@@ -303,7 +304,7 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo.png" class="logo" alt="" />
+      <img src="images/logo-20378f63.svg" class="logo" alt="" />
         <div class="lang-selector">
               <a href="#" data-language-name="json">curl</a>
               <a href="#" data-language-name="javascript">javascript</a>
@@ -340,15 +341,86 @@
                   </li>
                   <li>
                     <a href="#order-commands" class="toc-h2 toc-link" data-title="Order Commands">Order Commands</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#place-limit-order" class="toc-h3 toc-link" data-title="Place Limit Order">Place Limit Order</a>
+                          </li>
+                          <li>
+                            <a href="#place-market-order" class="toc-h3 toc-link" data-title="Place Market Order">Place Market Order</a>
+                          </li>
+                          <li>
+                            <a href="#place-stop-limit-order" class="toc-h3 toc-link" data-title="Place Stop Limit Order">Place Stop Limit Order</a>
+                          </li>
+                          <li>
+                            <a href="#place-batch-orders" class="toc-h3 toc-link" data-title="Place Batch Orders">Place Batch Orders</a>
+                          </li>
+                          <li>
+                            <a href="#cancel-order" class="toc-h3 toc-link" data-title="Cancel Order">Cancel Order</a>
+                          </li>
+                          <li>
+                            <a href="#cancel-batch-orders" class="toc-h3 toc-link" data-title="Cancel Batch Orders">Cancel Batch Orders</a>
+                          </li>
+                          <li>
+                            <a href="#modify-order" class="toc-h3 toc-link" data-title="Modify Order">Modify Order</a>
+                          </li>
+                          <li>
+                            <a href="#modify-batch-orders" class="toc-h3 toc-link" data-title="Modify Batch Orders">Modify Batch Orders</a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#subscriptions-private" class="toc-h2 toc-link" data-title="Subscriptions - Private">Subscriptions - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#balance-channel" class="toc-h3 toc-link" data-title="Balance Channel">Balance Channel</a>
+                          </li>
+                          <li>
+                            <a href="#position-channel" class="toc-h3 toc-link" data-title="Position Channel">Position Channel</a>
+                          </li>
+                          <li>
+                            <a href="#order-channel" class="toc-h3 toc-link" data-title="Order Channel">Order Channel</a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#subscriptions-public" class="toc-h2 toc-link" data-title="Subscriptions - Public">Subscriptions - Public</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#fixed-size-order-book" class="toc-h3 toc-link" data-title="Fixed Size Order Book">Fixed Size Order Book</a>
+                          </li>
+                          <li>
+                            <a href="#full-order-book" class="toc-h3 toc-link" data-title="Full Order Book">Full Order Book</a>
+                          </li>
+                          <li>
+                            <a href="#incremental-order-book" class="toc-h3 toc-link" data-title="Incremental Order Book">Incremental Order Book</a>
+                          </li>
+                          <li>
+                            <a href="#best-bid-ask" class="toc-h3 toc-link" data-title="Best Bid/Ask">Best Bid/Ask</a>
+                          </li>
+                          <li>
+                            <a href="#trade" class="toc-h3 toc-link" data-title="Trade">Trade</a>
+                          </li>
+                          <li>
+                            <a href="#ticker" class="toc-h3 toc-link" data-title="Ticker">Ticker</a>
+                          </li>
+                          <li>
+                            <a href="#candles" class="toc-h3 toc-link" data-title="Candles">Candles</a>
+                          </li>
+                          <li>
+                            <a href="#liquidation-rfq" class="toc-h3 toc-link" data-title="Liquidation RFQ">Liquidation RFQ</a>
+                          </li>
+                          <li>
+                            <a href="#market" class="toc-h3 toc-link" data-title="Market">Market</a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#other-responses" class="toc-h2 toc-link" data-title="Other Responses">Other Responses</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#cancel-all-open-orders" class="toc-h3 toc-link" data-title="Cancel All Open Orders">Cancel All Open Orders</a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#error-codes" class="toc-h2 toc-link" data-title="Error Codes">Error Codes</a>
@@ -363,9 +435,121 @@
                   </li>
                   <li>
                     <a href="#methods-private" class="toc-h2 toc-link" data-title="Methods - Private">Methods - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v2-accountinfo" class="toc-h3 toc-link" data-title="GET <code>/v2/accountinfo</code>">GET <code>/v2/accountinfo</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-balances" class="toc-h3 toc-link" data-title="GET <code>/v2/balances</code>">GET <code>/v2/balances</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-balances-instrumentid" class="toc-h3 toc-link" data-title="GET <code>/v2/balances/{instrumentId}</code>">GET <code>/v2/balances/{instrumentId}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-positions" class="toc-h3 toc-link" data-title="GET  <code>/v2/positions</code>">GET  <code>/v2/positions</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-positions-instrumentid" class="toc-h3 toc-link" data-title="GET  <code>/v2/positions/{instrumentId}</code>">GET  <code>/v2/positions/{instrumentId}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-trades-marketcode" class="toc-h3 toc-link" data-title="GET <code>/v2/trades/{marketCode}</code>">GET <code>/v2/trades/{marketCode}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-orders" class="toc-h3 toc-link" data-title="GET <code>/v2/orders</code>">GET <code>/v2/orders</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-1-orders" class="toc-h3 toc-link" data-title="GET <code>/v2.1/orders</code>">GET <code>/v2.1/orders</code></a>
+                          </li>
+                          <li>
+                            <a href="#delete-v2-cancel-orders" class="toc-h3 toc-link" data-title="DELETE <code>/v2/cancel/orders</code>">DELETE <code>/v2/cancel/orders</code></a>
+                          </li>
+                          <li>
+                            <a href="#delete-v2-cancel-orders-marketcode" class="toc-h3 toc-link" data-title="DELETE <code>/v2/cancel/orders/{marketCode}</code>">DELETE <code>/v2/cancel/orders/{marketCode}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-1-delivery-orders" class="toc-h3 toc-link" data-title="GET <code>/v2.1/delivery/orders</code>">GET <code>/v2.1/delivery/orders</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v2-orders-place" class="toc-h3 toc-link" data-title="POST <code>/v2/orders/place</code>">POST <code>/v2/orders/place</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v2-orders-modify" class="toc-h3 toc-link" data-title="POST <code>/v2/orders/modify</code>">POST <code>/v2/orders/modify</code></a>
+                          </li>
+                          <li>
+                            <a href="#delete-v2-orders-cancel" class="toc-h3 toc-link" data-title="DELETE <code>/v2/orders/cancel</code>">DELETE <code>/v2/orders/cancel</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v2-mint" class="toc-h3 toc-link" data-title="POST <code>/v2/mint</code>">POST <code>/v2/mint</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-mint-asset" class="toc-h3 toc-link" data-title="GET <code>/v2/mint/{asset}</code>">GET <code>/v2/mint/{asset}</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v2-redeem" class="toc-h3 toc-link" data-title="POST <code>/v2/redeem</code>">POST <code>/v2/redeem</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-redeem-asset" class="toc-h3 toc-link" data-title="GET <code>/v2/redeem/{asset}</code>">GET <code>/v2/redeem/{asset}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-borrow-asset" class="toc-h3 toc-link" data-title="GET <code>v2/borrow/{asset}</code>">GET <code>v2/borrow/{asset}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-repay-asset" class="toc-h3 toc-link" data-title="GET <code>v2/repay/{asset}</code>">GET <code>v2/repay/{asset}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-funding-payments" class="toc-h3 toc-link" data-title="GET <code>/v2/funding-payments</code>">GET <code>/v2/funding-payments</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v2-amm-create" class="toc-h3 toc-link" data-title="POST <code>/v2/AMM/create</code>">POST <code>/v2/AMM/create</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v2-amm-redeem" class="toc-h3 toc-link" data-title="POST <code>/v2/AMM/redeem</code>">POST <code>/v2/AMM/redeem</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-amm" class="toc-h3 toc-link" data-title="GET <code>/v2/AMM</code>">GET <code>/v2/AMM</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#methods-public" class="toc-h2 toc-link" data-title="Methods - Public">Methods - Public</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v2-all-markets" class="toc-h3 toc-link" data-title="GET <code>/v2/all/markets</code>">GET <code>/v2/all/markets</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-all-assets" class="toc-h3 toc-link" data-title="GET <code>/v2/all/assets</code>">GET <code>/v2/all/assets</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-publictrades-marketcode" class="toc-h3 toc-link" data-title="GET <code>/v2/publictrades/{marketCode}</code>">GET <code>/v2/publictrades/{marketCode}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-ticker" class="toc-h3 toc-link" data-title="GET <code>/v2/ticker</code>">GET <code>/v2/ticker</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-candles-marketcode" class="toc-h3 toc-link" data-title="GET <code>/v2/candles/{marketCode}</code>">GET <code>/v2/candles/{marketCode}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-depth-marketcode-level" class="toc-h3 toc-link" data-title="GET <code>/v2/depth/{marketCode}/{level}</code>">GET <code>/v2/depth/{marketCode}/{level}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-ping" class="toc-h3 toc-link" data-title="GET <code>/v2/ping</code>">GET <code>/v2/ping</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-flex-protocol-balances-flexprotocol" class="toc-h3 toc-link" data-title="GET <code>/v2/flex-protocol/balances/{flexProtocol}</code>">GET <code>/v2/flex-protocol/balances/{flexProtocol}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-flex-protocol-positions-flexprotocol" class="toc-h3 toc-link" data-title="GET <code>/v2/flex-protocol/positions/{flexProtocol}</code>">GET <code>/v2/flex-protocol/positions/{flexProtocol}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-flex-protocol-orders-flexprotocol" class="toc-h3 toc-link" data-title="GET <code>/v2/flex-protocol/orders/{flexProtocol}</code>">GET <code>/v2/flex-protocol/orders/{flexProtocol}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-flex-protocol-trades-flexprotocol-marketcode" class="toc-h3 toc-link" data-title="GET <code>/v2/flex-protocol/trades/{flexProtocol}/{marketCode}</code>">GET <code>/v2/flex-protocol/trades/{flexProtocol}/{marketCode}</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v2-flex-protocol-delivery-orders-flexprotocol" class="toc-h3 toc-link" data-title="GET <code>/v2/flex-protocol/delivery/orders/{flexProtocol}</code>">GET <code>/v2/flex-protocol/delivery/orders/{flexProtocol}</code></a>
+                          </li>
+                      </ul>
                   </li>
               </ul>
           </li>
@@ -383,30 +567,189 @@
                   </li>
                   <li>
                     <a href="#account-amp-wallet-private" class="toc-h2 toc-link" data-title="Account &amp; Wallet - Private">Account &amp; Wallet - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v3-account" class="toc-h3 toc-link" data-title="GET <code>/v3/account</code>">GET <code>/v3/account</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-account-names" class="toc-h3 toc-link" data-title="GET <code>/v3/account/names</code>">GET <code>/v3/account/names</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-wallet" class="toc-h3 toc-link" data-title="GET <code>/v3/wallet</code>">GET <code>/v3/wallet</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v3-transfer" class="toc-h3 toc-link" data-title="POST <code>/v3/transfer</code>">POST <code>/v3/transfer</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-transfer" class="toc-h3 toc-link" data-title="GET <code>/v3/transfer</code>">GET <code>/v3/transfer</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-balances" class="toc-h3 toc-link" data-title="GET <code>/v3/balances</code>">GET <code>/v3/balances</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-positions" class="toc-h3 toc-link" data-title="GET  <code>/v3/positions</code>">GET  <code>/v3/positions</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v3-leverage" class="toc-h3 toc-link" data-title="POST <code>/v3/leverage</code>">POST <code>/v3/leverage</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v3-position-adjust" class="toc-h3 toc-link" data-title="POST <code>/v3/position/adjust</code>">POST <code>/v3/position/adjust</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-funding" class="toc-h3 toc-link" data-title="GET <code>/v3/funding</code>">GET <code>/v3/funding</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#deposits-amp-withdrawals-private" class="toc-h2 toc-link" data-title="Deposits &amp; Withdrawals - Private">Deposits &amp; Withdrawals - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v3-deposit-addresses" class="toc-h3 toc-link" data-title="GET <code>/v3/deposit-addresses</code>">GET <code>/v3/deposit-addresses</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-deposit" class="toc-h3 toc-link" data-title="GET <code>/v3/deposit</code>">GET <code>/v3/deposit</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-withdrawal-addresses" class="toc-h3 toc-link" data-title="GET <code>/v3/withdrawal-addresses</code>">GET <code>/v3/withdrawal-addresses</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-withdrawal" class="toc-h3 toc-link" data-title="GET <code>/v3/withdrawal</code>">GET <code>/v3/withdrawal</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v3-withdrawal" class="toc-h3 toc-link" data-title="POST <code>/v3/withdrawal</code>">POST <code>/v3/withdrawal</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-withdrawal-fee" class="toc-h3 toc-link" data-title="GET <code>/v3/withdrawal-fee</code>">GET <code>/v3/withdrawal-fee</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#orders-private" class="toc-h2 toc-link" data-title="Orders - Private">Orders - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v3-orders-status" class="toc-h3 toc-link" data-title="GET <code>/v3/orders/status</code>">GET <code>/v3/orders/status</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-orders-working" class="toc-h3 toc-link" data-title="GET <code>/v3/orders/working</code>">GET <code>/v3/orders/working</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v3-orders-place" class="toc-h3 toc-link" data-title="POST <code>/v3/orders/place</code>">POST <code>/v3/orders/place</code></a>
+                          </li>
+                          <li>
+                            <a href="#delete-v3-orders-cancel" class="toc-h3 toc-link" data-title="DELETE <code>/v3/orders/cancel</code>">DELETE <code>/v3/orders/cancel</code></a>
+                          </li>
+                          <li>
+                            <a href="#delete-v3-orders-cancel-all" class="toc-h3 toc-link" data-title="DELETE <code>/v3/orders/cancel-all</code>">DELETE <code>/v3/orders/cancel-all</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#trades-private" class="toc-h2 toc-link" data-title="Trades - Private">Trades - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v3-trades" class="toc-h3 toc-link" data-title="GET <code>/v3/trades</code>">GET <code>/v3/trades</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#flex-assets-private" class="toc-h2 toc-link" data-title="Flex Assets - Private">Flex Assets - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#post-v3-flexasset-mint" class="toc-h3 toc-link" data-title="POST <code>/v3/flexasset/mint</code>">POST <code>/v3/flexasset/mint</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v3-flexasset-redeem" class="toc-h3 toc-link" data-title="POST <code>/v3/flexasset/redeem</code>">POST <code>/v3/flexasset/redeem</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-flexasset-mint" class="toc-h3 toc-link" data-title="GET <code>/v3/flexasset/mint</code>">GET <code>/v3/flexasset/mint</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-flexasset-redeem" class="toc-h3 toc-link" data-title="GET <code>/v3/flexasset/redeem</code>">GET <code>/v3/flexasset/redeem</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-flexasset-earned" class="toc-h3 toc-link" data-title="GET <code>/v3/flexasset/earned</code>">GET <code>/v3/flexasset/earned</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#amm-private" class="toc-h2 toc-link" data-title="AMM - Private">AMM - Private</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#post-v3-amm-create" class="toc-h3 toc-link" data-title="POST <code>/v3/AMM/create</code>">POST <code>/v3/AMM/create</code></a>
+                          </li>
+                          <li>
+                            <a href="#post-v3-amm-redeem" class="toc-h3 toc-link" data-title="POST <code>/v3/AMM/redeem</code>">POST <code>/v3/AMM/redeem</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-amm" class="toc-h3 toc-link" data-title="GET <code>/v3/AMM</code>">GET <code>/v3/AMM</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-amm-balances" class="toc-h3 toc-link" data-title="GET <code>/v3/AMM/balances</code>">GET <code>/v3/AMM/balances</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-amm-positions" class="toc-h3 toc-link" data-title="GET <code>/v3/AMM/positions</code>">GET <code>/v3/AMM/positions</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-amm-orders" class="toc-h3 toc-link" data-title="GET <code>/v3/AMM/orders</code>">GET <code>/v3/AMM/orders</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-amm-trades" class="toc-h3 toc-link" data-title="GET <code>/v3/AMM/trades</code>">GET <code>/v3/AMM/trades</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-amm-hash-token" class="toc-h3 toc-link" data-title="GET <code>/v3/AMM/hash-token</code>">GET <code>/v3/AMM/hash-token</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#market-data-public" class="toc-h2 toc-link" data-title="Market Data - Public">Market Data - Public</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v3-markets" class="toc-h3 toc-link" data-title="GET <code>/v3/markets</code>">GET <code>/v3/markets</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-assets" class="toc-h3 toc-link" data-title="GET <code>/v3/assets</code>">GET <code>/v3/assets</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-tickers" class="toc-h3 toc-link" data-title="GET <code>/v3/tickers</code>">GET <code>/v3/tickers</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-funding-estimates" class="toc-h3 toc-link" data-title="GET <code>/v3/funding/estimates</code>">GET <code>/v3/funding/estimates</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-candles" class="toc-h3 toc-link" data-title="GET <code>/v3/candles</code>">GET <code>/v3/candles</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-depth" class="toc-h3 toc-link" data-title="GET <code>/v3/depth</code>">GET <code>/v3/depth</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-markets-operational" class="toc-h3 toc-link" data-title="GET <code>/v3/markets/operational</code>">GET <code>/v3/markets/operational</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-exchange-trades" class="toc-h3 toc-link" data-title="GET <code>/v3/exchange-trades</code>">GET <code>/v3/exchange-trades</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#all-funding-rates-public" class="toc-h2 toc-link" data-title="All Funding Rates - Public">All Funding Rates - Public</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v3-funding-rates" class="toc-h3 toc-link" data-title="GET <code>/v3/funding/rates</code>">GET <code>/v3/funding/rates</code></a>
+                          </li>
+                      </ul>
                   </li>
                   <li>
                     <a href="#flex-assets-public" class="toc-h2 toc-link" data-title="Flex Assets - Public">Flex Assets - Public</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#get-v3-flexasset-balances" class="toc-h3 toc-link" data-title="GET <code>/v3/flexasset/balances</code>">GET <code>/v3/flexasset/balances</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-flexasset-positions" class="toc-h3 toc-link" data-title="GET <code>/v3/flexasset/positions</code>">GET <code>/v3/flexasset/positions</code></a>
+                          </li>
+                          <li>
+                            <a href="#get-v3-flexasset-yields" class="toc-h3 toc-link" data-title="GET <code>/v3/flexasset/yields</code>">GET <code>/v3/flexasset/yields</code></a>
+                          </li>
+                      </ul>
                   </li>
               </ul>
           </li>
