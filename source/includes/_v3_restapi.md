@@ -592,7 +592,7 @@ POST /v3/leverage
 ```json
 {
     "marketCode": "BTC-USD-SWAP-PER",
-    "leverage": 3
+    "leverage": 3.1
 }
 ```
 
